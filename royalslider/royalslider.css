@@ -1,13 +1,18 @@
-/* v1.0.4 */
+/* v1.0.5 */
 /* Core RS CSS file. 95% of time you shouldn't change anything here. */
 .royalSlider {
-	width: 600px;
-	height: 400px;
+	width: 700px;
+	height: 500px;
 	position: relative;
 	direction: ltr;
 }
 .royalSlider > * {
 	float: left;
+}
+
+
+.rsWebkit3d .rsSlide {
+	-webkit-transform: translateZ(0);
 }
 
 
