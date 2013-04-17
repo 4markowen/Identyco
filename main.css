@@ -15,7 +15,7 @@ a {
 }  
 
 #core{
-	width:700px;
+	width:960px;
 	top:0px;
 	margin:-15px  auto;
 	height:500px;
@@ -34,7 +34,8 @@ a {
 
 
 #accordion {  
-    width: 700px;  
+    width: 960px;  
+    height: 600px;
     margin: 15px auto;  
 } 
 
@@ -86,6 +87,16 @@ a {
     border-bottom: 1px solid rgba(0, 0, 0, .2);  
     border-top: 1px solid rgba(250, 250, 250, .2);  
 } 
+
+#accordion .ui-accordion-content:first-of-type {  
+	background-color: 	#0099ff;
+	color: #FFFFFF;
+}
+
+#accordion .ui-accordion-content:last-of-type {  
+	background-color: 	#aaaaaa;
+	color: #FFFFFF;
+}
 
 #accordion .ui-accordion-header:first-of-type {  
     background-color: #028cd5;  
