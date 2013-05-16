@@ -6,6 +6,7 @@
 	position: relative;
 	direction: ltr;
 }
+
 .royalSlider > * {
 	float: left;
 }
@@ -225,7 +226,7 @@
 
 .rsABlock {
 	left: 0;
-	top: 0;
+	bottom: 0;
 	position: absolute;
 	z-index: 15;
 	
