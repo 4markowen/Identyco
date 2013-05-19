@@ -36,31 +36,6 @@ a {
     
 }
 
-/*#gallery p{
-	position: absolute !important;
-	visibility:visible;
-	display:inline;
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:12pt;
-	bottom:0px;
-	color: #fff;
-	left:0px;
-	width:960px;
-	height:70px;
-	text-align:left;
-	padding-left:20px;
-	padding-right:500px;
-	padding-bottom:10px;
-	padding-top:40px;
-	margin-bottom:0px;
-    background-image: -moz-linear-gradient(top, rgba( 0, 0, 0, 0) 0%, rgba( 0, 0, 0, 1 ) 100% ); /* FF3.6+ */  
-    /*background-image: -webkit-gradient(top, rgba( 0, 0, 0, 0) 0%, rgba( 0, 0, 0, 1 ) 100%); /* Chrome,Safari4+ */  
-    /*background-image: -webkit-linear-gradient(top, rgba( 0, 0, 0, 0) 0%, rgba( 0, 0, 0, 1 ) 100% ); /* Chrome10+,Safari5.1+ */  
-    /*background-image: -o-linear-gradient(top, rgba( 0, 0, 0, 0) 0%, rgba( 0, 0, 0, 1 ) 100%); /* Opera 11.10+ */  
-    /*background-image: -ms-linear-gradient(top, rgba( 0, 0, 0, 0) 0%, rgba( 0, 0, 0, 1 ) 100%); /* IE10+ */  
-    /*background: linear-gradient(top, rgba( 0, 0, 0, 0) 0%, rgba( 0, 0, 0, 1 ) 100% ); /* W3C */  
-	/*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff, endColorstr=#ffffffff); /* IE6-9 */  
-/*}*/
 
 .infoBlock {
   position: absolute !important;
@@ -74,6 +49,7 @@ a {
   overflow: hidden;
   padding: 20px;
 }
+
 .infoBlockLeftBlack {
   color: #FFF;
   background-image: -moz-linear-gradient(top, rgba( 0, 0, 0, 0) 0%, rgba( 0, 0, 0, 1 ) 100% ); /* FF3.6+ */  
@@ -88,16 +64,19 @@ a {
   left: 30px;
   right: auto;
 }
+
 .infoBlock h4 {
   font-size: 20px;
   line-height: 1.2;
   margin: 0;
   padding-bottom: 3px;
 }
+
 .infoBlock p {
   font-size: 14px;
   margin: 4px 0 0;
 }
+
 .infoBlock a {
   color: #FFF;
   text-decoration: underline;
@@ -123,11 +102,11 @@ a {
     background-image: -o-linear-gradient(top, rgba( 0, 0, 0, 0) 0%, rgba( 0, 0, 0, 1 ) 100%); /* Opera 11.10+ */  
     background-image: -ms-linear-gradient(top, rgba( 0, 0, 0, 0) 0%, rgba( 0, 0, 0, 1 ) 100%); /* IE10+ */  
     background: linear-gradient(top, rgba( 0, 0, 0, 0) 0%, rgba( 0, 0, 0, 1 ) 100% ); /* W3C */  
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff, endColorstr=#ffffffff); /* IE6-9 */  
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000, endColorstr=#FF000000); /* IE6-9 */  
 } 
 
 
-#accordion {  
+#accordion { 
     width: 960px;  
     height: 600px;
     margin: 15px auto;  

@@ -4,48 +4,23 @@
   <meta charset="utf-8" />
   <title>Identyco</title>
   <link rel="stylesheet" href="main.css" />
-  <link rel="stylesheet" href="../Identyco/royalslider/royalslider.css">
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="../Identyco/royalslider/royalslider.css" />
   <!--<link rel="stylesheet" href="../Identyco/royalslider/skins/default/rs-default.css" /> -->
   
   <link rel="stylesheet" href="../Identyco/royalslider/skins/minimal-white/rs-minimal-white.css" />
- 
-    
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>	
-	<script src="../Identyco/royalslider/jquery.easing-1.3.js"></script>
-	<script src="../Identyco/royalslider/jquery.royalslider.min.js"></script>
+	<!--[if lte IE 8]>
+	<script type="text/javascript" src="../Identyco/js/mootools.js"></script>
+	<script type="text/javascript" src="../Identyco/js/selectivizr.js"></script>
+	<![endif]--> 
+
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>	
+	<script type="text/javascript" src="../Identyco/royalslider/jquery.easing-1.3.js"></script>
+	<script type="text/javascript" src="../Identyco/royalslider/jquery.royalslider.min.js"></script>
 	<script type="text/javascript" src="http://fast.fonts.com/jsapi/a12a5b68-b281-43b3-b239-1f07b4943aa7.js"></script>
 </head>
 <body>
-
-
-
-<!--
-<div class="sliderContainer fullWidth clearfix">
-<div id="full-width-slider" class="royalSlider heroSlider rsMinW rsHor rsWebkit3d rsWithBullets" style="height: 406.51041666666663px; "><div class="rsOverflow" style="cursor: -webkit-grabbing; width: 1115px; height: 520px; "><div class="rsContainer" style="-webkit-transition: 0s cubic-bezier(0.39, 0.575, 0.565, 1); -webkit-transform: translate3d(13.000000000000002px, 0px, 0px); "><div style="left: 0px; " class="rsSlide "><div class="rsContent" style="visibility: visible; opacity: 1; -webkit-transition: opacity 400ms ease-in-out; ">
-    <img class="rsImg rsMainSlideImage" src="/plugins/royal-slider/img/full-width/1.jpg" alt="" style="width: 1115px; height: 542px; margin-left: 0px; margin-top: -11px; ">
-    <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200" style="display: block; -webkit-transform: translate3d(0px, 0px, 0px); opacity: 1; -webkit-transition: -webkit-transform 200ms cubic-bezier(0.39, 0.575, 0.565, 1), opacity; ">
-      <h4>This is an animated block, add any number of them to any type of slide</h4>
-      <p>Put completely anything inside - text, images, inputs, links, buttons.</p>
-    </div>
-  </div></div><div style="left: 1123px; " class="rsSlide "><div class="rsContent">
-    <img class="rsImg rsMainSlideImage" src="/plugins/royal-slider/img/full-width/2.jpg" alt="" style="width: 1115px; height: 542px; margin-left: 0px; margin-top: -11px; ">
-     <div class="infoBlock  rsAbsoluteEl" style="color:#000;" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200">
-      <h4>This is a static HTML block</h4>
-      <p>It's always displayed and not animated by slider.</p>
-    </div>
-  </div></div><div style="left: 2246px; " class="rsSlide "><div class="rsContent">
-    <img class="rsImg rsMainSlideImage" src="/plugins/royal-slider/img/full-width/3.jpg" alt="" style="width: 1115px; height: 542px; margin-left: 0px; margin-top: -11px; ">
-    <div class="infoBlock rsABlock infoBlockLeftBlack" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200" style="display: none; ">
-      <h4>You can link to this slide by adding #3 to url.</h4>
-      <p><a href="http://dimsemenov.com/plugins/royal-slider/gallery-with-deeplinking/">Learn more</a></p>
-    </div>
-  </div></div><div style="left: 3369px; " class="rsSlide "><div class="rsContent">
-    <img class="rsImg rsMainSlideImage" src="/plugins/royal-slider/img/full-width/4.jpg" alt="" style="width: 1115px; height: 542px; margin-left: 0px; margin-top: -11px; ">
-    <span class="photosBy rsAbsoluteEl" data-fade-effect="fa;se" data-move-offset="40" data-move-effect="bottom" data-speed="200">Photos by <a href="http://www.flickr.com/photos/gilderic/">Gilderic</a></span>
-  </div></div></div></div><div class="rsNav rsBullets"><div class="rsNavItem rsBullet rsNavSelected"><span></span></div><div class="rsNavItem rsBullet"><span></span></div><div class="rsNavItem rsBullet"><span></span></div><div class="rsNavItem rsBullet"><span></span></div></div><div class="rsArrow rsArrowLeft rsArrowDisabled" style="display: block; "><div class="rsArrowIcn"></div></div><div class="rsArrow rsArrowRight" style="display: block; "><div class="rsArrowIcn"></div></div><div class="rsGCaption"></div></div>
-  </div>
-  -->
 
  <div class="sliderContainer fullWidth clearfix">
 	<div id="gallery" class="royalSlider heroSlider rsMinW rsHor rsWebkit3d rsWithBullets">
@@ -254,50 +229,19 @@ NG16 3SU<br />
             // as an example, enable keyboard arrows nav
             keyboardNavEnabled: true,
             imageScaleMode: 'fill',
-            //autoScaleSliderWidth: 960,     
-   			//autoScaleSliderHeight: 500,
-            //imgWidth: 700,
-            //imgHeight: 500,
-            //autoPlay: 
-            //{	// autoplay options go gere
-    		//enabled: true,
-    		//pauseOnHover: true,
-    		//delay: 5000
-    		//}
+            autoScaleSliderWidth: 960,     
+   			autoScaleSliderHeight: 500,
+            imgWidth: 700,
+            imgHeight: 500,
+            autoPlay: 
+            {	// autoplay options go gere
+    		enabled: true,
+    		pauseOnHover: true,
+    		delay: 5000
+    		}
         });  
     });
 </script>
-<!--
-<script>
-      jQuery(document).ready(function($) {
-  $('#full-width-slider').royalSlider({
-    arrowsNav: true,
-    loop: false,
-    keyboardNavEnabled: true,
-    controlsInside: false,
-    imageScaleMode: 'fill',
-    arrowsNavAutoHide: false,
-    autoScaleSlider: true, 
-    autoScaleSliderWidth: 700,     
-    autoScaleSliderHeight: 500,
-    controlNavigation: 'bullets',
-    thumbsFitInViewport: false,
-    navigateByClick: true,
-    startSlideId: 0,
-    autoPlay: false,
-    transitionType:'move',
-    globalCaption: true,
-    deeplinking: {
-      enabled: true,
-      change: false
-    },
-    /* size of all images http://help.dimsemenov.com/kb/royalslider-jquery-plugin-faq/adding-width-and-height-properties-to-images */
-    imgWidth: 700,
-    imgHeight: 500
-  });
-});
-
- </script>-->
  
 </body>
 </html>
