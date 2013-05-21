@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--[if lte IE 8]> <html class="ie8"> <![endif]-->
+
 <head>
   <meta charset="utf-8" />
   <title>Identyco</title>
@@ -18,13 +20,21 @@
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>	
 	<script type="text/javascript" src="../Identyco/royalslider/jquery.easing-1.3.js"></script>
 	<script type="text/javascript" src="../Identyco/royalslider/jquery.royalslider.min.js"></script>
-	<script type="text/javascript" src="http://fast.fonts.com/jsapi/a12a5b68-b281-43b3-b239-1f07b4943aa7.js"></script>
+	<!--<script type="text/javascript" src="http://fast.fonts.com/jsapi/a12a5b68-b281-43b3-b239-1f07b4943aa7.js"></script>-->
 </head>
 <body>
 
  <div class="sliderContainer fullWidth clearfix">
 	<div id="gallery" class="royalSlider heroSlider rsMinW rsHor rsWebkit3d rsWithBullets">
-	
+		    
+		    <div class="rsSlide">
+		        <img class="rsContent" src="../Identyco/images/eastwood_flags.jpg" width="960px" alt="image description"/>
+		            <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200" style="display: block; -webkit-transform: translate3d(0px, 0px, 0px); opacity: 1; -webkit-transition: -webkit-transform 200ms cubic-bezier(0.39, 0.575, 0.565, 1), opacity; ">
+				      <h4>Eastwood festival</h4>
+				      <p>Put completely anything inside - text, images, inputs, links, buttons.</p>
+				    </div>
+		    </div>	
+		    	
 		    <div class="rsSlide">
 		        <img class="rsContent" src="../Identyco/images/birchwood.jpg" width="960px" alt="image description"/>
 		            <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200" style="display: block; -webkit-transform: translate3d(0px, 0px, 0px); opacity: 1; -webkit-transition: -webkit-transform 200ms cubic-bezier(0.39, 0.575, 0.565, 1), opacity; ">
@@ -48,14 +58,7 @@
 				      <p>Put completely anything inside - text, images, inputs, links, buttons.</p>
 				    </div>
 		    </div>
-		    
-		    <div class="rsSlide">
-		        <img class="rsContent" src="../Identyco/images/eastwood_flags.jpg" width="960px" alt="image description"/>
-		            <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10" data-move-effect="bottom" data-speed="200" style="display: block; -webkit-transform: translate3d(0px, 0px, 0px); opacity: 1; -webkit-transition: -webkit-transform 200ms cubic-bezier(0.39, 0.575, 0.565, 1), opacity; ">
-				      <h4>Eastwood festival</h4>
-				      <p>Put completely anything inside - text, images, inputs, links, buttons.</p>
-				    </div>
-		    </div>		    
+	    
 		    
 		    <div class="rsSlide">
 		        <img class="rsContent" src="../Identyco/images/eats_n_treats.jpg" width="960px" alt="image description"/>
@@ -188,12 +191,12 @@
   <div id="contentText">
     <p>Measure twice, cut once. The preparation and design stage of your project lays the foundation to it's success. We provide a free no obligation quote for all your signage, CNC routing, Engraving, Joinery, and Woodworking needs. </p>
     <p>By talking to us we can advise you on the cost of the project, getting the right impact from your sign, it's longevity and maintenance free reliability, the legal requirements it might need to meet, along with a providing drawings for the relevant planning authority.</p>
-    <p>To give you an idea of our work visit the gallery<br /></p>
+    <p ><a id="gallerylink" href="#">To give you an idea of our work visit the gallery</a><br /></p>
   </div>
   <h3>build</h3>
   <div id="contentText">
     <p>We produce all our own sign trays, fret cut lettering, built up acrylic letters, illuminated signs, Edge lit LED signs. We'll also explain what those are if you're new to the world of signs, or if you're already in the trade we'll have a knowledgeable talk about what you need.</p>
-    <p>Take a look at some of the examples in our gallery.<br /></p>
+    <p ><a id="gallerylink2" href="#">Take a look at some of the examples in our gallery.</a><br /></p>
   </div>
   <h3>install</h3>
   <div id="contentText">
@@ -204,7 +207,7 @@
   <div id="contentText">
     <p>The quickest way to find an answer to your signage needs is to talk to us. Otherwise click around the options above to find out more about us.</p>
     <p>01773 715 555<br />
-info@identyco.co.uk</p>
+<a href="mailto:info@identyco.co.uk">info@identyco.co.uk</a></p>
 <p>
 Identyco<br />
 Unit 1 High Hazel Court<br />
@@ -220,6 +223,30 @@ NG16 3SU<br />
   $(function() {
     $( "#accordion" ).accordion({ active: 4 });
   });
+  </script>
+  
+  <script>
+  	$("#gallerylink").click(function () {
+      $("#gallery").show();
+      $("#core").hide();
+      $("#logo").hide();
+      
+      var slider = $(".royalSlider").data('royalSlider');
+      slider.goTo(0);
+      
+    });
+
+  	$("#gallerylink2").click(function () {
+      $("#gallery").show();
+      $("#core").hide();
+      $("#logo").hide();
+      
+      var slider = $(".royalSlider").data('royalSlider');
+      slider.goTo(0);
+      
+    });
+  	
+  	
   </script>
 
  	<script>
@@ -242,6 +269,11 @@ NG16 3SU<br />
         });  
     });
 </script>
+
+	<script>
+	$document.all['mti_wfs_colophon'].style.position = 'relative';
+	</script>
+
  
 </body>
 </html>

@@ -1,9 +1,14 @@
-
+@font-face
+{
+font-family: CartoGothicStd	;
+src: url('../Identyco/CartoGothicStd-Book.otf'),
+     url('../Identyco/CartoGothicStd-Book-webfont.eot'); /* IE9 */
+}
 
 html {  
 
     background: #e3e3e0;  
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }  
 
 a {  
@@ -32,9 +37,14 @@ a {
 	height:500px;
 	background: #FFFFFF	;
 	overflow:hidden ;
-	margin-bottom:-500px;
+	/*margin-bottom:-500px;*/
     
 }
+
+.ie8 #core {  
+    margin-bottom: 80px;  
+}
+
 
 
 .infoBlock {
@@ -44,8 +54,8 @@ a {
   height:70px;
   width:960px;
   padding-bottom: 0;
-  background: #000;
-  background: rgba(0, 0, 0, 0);
+  /*background: #000;
+  background: rgba(0, 0, 0, 0);*/
   overflow: hidden;
   padding: 20px;
 }
@@ -58,7 +68,7 @@ a {
   background-image: -o-linear-gradient(top, rgba( 0, 0, 0, 0) 0%, rgba( 0, 0, 0, 1 ) 100%); /* Opera 11.10+ */  
   background-image: -ms-linear-gradient(top, rgba( 0, 0, 0, 0) 0%, rgba( 0, 0, 0, 1 ) 100%); /* IE10+ */  
   background: linear-gradient(top, rgba( 0, 0, 0, 0) 0%, rgba( 0, 0, 0, 1 ) 100% ); /* W3C */  
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff, endColorstr=#ffffffff); /* IE6-9 */  
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000, endColorstr=#FF000000); /* IE6-9 */  
   /*background: #000;
   background: rgba(0,0,0,0.75);*/
   left: 30px;
@@ -82,19 +92,38 @@ a {
   text-decoration: underline;
 }
 
-#logo {  
-	font-family: 'HelveticaNeueW01-UltLt';
+.ie8 #logo {  
+   	font-family: CartoGothicStd;
+	/*font-family: 'HelveticaNeueW01-UltLt';*/
 	pointer-events: none;
 	color: #ffffff;
 	font-size:70pt;
 	position:relative;
-	top: -163px;
+	top: -257px;
+    width: 940px;  
+    height: 100px;
+    margin: 15px auto;  
+    padding-right: 20px;
+    padding-bottom:10px;
+    margin-bottom: -205px;
+    text-align:right;
+    filter: ;
+}
+
+#logo {  
+	font-family: CartoGothicStd;
+	/*font-family: 'HelveticaNeueW01-UltLt';*/
+	pointer-events: none;
+	color: #ffffff;
+	font-size:70pt;
+	position:relative;
+	top: -158px;
     width: 940px;  
     height: 70px;
     margin: 15px auto;  
     padding-right: 20px;
-    padding-bottom:18px;
-    margin-bottom: -180px;
+    padding-bottom:10px;
+    margin-bottom: -173px;
     text-align:right;
     background-image: -moz-linear-gradient(top, rgba( 0, 0, 0, 0) 0%, rgba( 0, 0, 0, 1 ) 100% ); /* FF3.6+ */  
     background-image: -webkit-gradient(top, rgba( 0, 0, 0, 0) 0%, rgba( 0, 0, 0, 1 ) 100%); /* Chrome,Safari4+ */  
@@ -132,7 +161,8 @@ a {
 }
 
 #accordion .ui-accordion-content a {  
-    color: #777;  
+    color: #FFF;
+    text-decoration:underline;  
 }  
 
 #accordion .ui-accordion-header {  
@@ -246,6 +276,5 @@ a {
 
 	width: 310px;
 	left: 610px;
-	
 	
 }
