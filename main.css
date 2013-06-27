@@ -326,8 +326,8 @@ a {
 #contentText p {
 	position: relative;
 
-	width: 350px;
-	left: 570px;
+	width: 450px;
+	left: 470px;
 	
 }
 
@@ -335,7 +335,7 @@ a {
 #contentText ul {
 	position: relative;
 	list-style-type: none;
-	width: 350px;
-	left: 570px;
+	width: 450px;
+	left: 470px;
 	
 }
