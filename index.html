@@ -25,7 +25,7 @@
 <body>
 
  <div class="sliderContainer fullWidth clearfix">
-	<div id="productGallery" class="royalSlider heroSlider rsMinW rsHor rsWebkit3d rsWithBullets">
+	<div  id="productGallery" class="royalSlider heroSlider rsMinW rsHor rsWebkit3d rsWithBullets">
 		    
 		    <div class="rsSlide">
 		        <img class="rsContent" src="../Identyco/images/eastwood_flags.jpg" width="960px" alt="image description"/>
@@ -304,8 +304,8 @@
 <iframe src="http://player.vimeo.com/video/40693266?title=0&amp;byline=0&amp;portrait=0&amp;badge=0" width="960" height="540" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 </div>
  
- <div id="core" >
-	<div class="royalSlider rsDefault">
+ <div class="sliderContainer fullWidth clearfix">
+	<div id="core" class="royalSlider rsDefault">
 	    <div>
 	        <img class="rsImg" src="../Identyco/images/birchwood.jpg" width="960px" alt=""/>
 	    </div>
@@ -314,7 +314,7 @@
 	    	 <img class="rsImg" src="../Identyco/images/ocean_basket.jpg" width="960px" alt="" />
 	    </div>
 	
-	    <div class="rsContent">
+	    <div>
 	        <img class="rsImg" src="../Identyco/images/camille_sign.jpg" width="960px" alt="" />
 	    </div>    
 	</div>
@@ -438,7 +438,7 @@ NG16 3SU<br />
         // Animation complete
         });
       
-      var slider = $(".royalSlider").data('royalSlider');
+      var slider = $('#core').data('royalSlider');
       slider.goTo(0);
       
     });
@@ -470,7 +470,7 @@ NG16 3SU<br />
       $("#core").hide();
       $("#logo").hide();
       
-      var slider = $(".royalSlider").data('royalSlider');
+      var slider = $('#productGallery').data('royalSlider');
       slider.goTo(0);
       
     });
@@ -485,7 +485,7 @@ NG16 3SU<br />
       $("#core").hide();
       $("#logo").hide();
       
-      var slider = $(".royalSlider").data('royalSlider');
+      var slider = $('#servicesGallery').data('royalSlider');
       slider.goTo(0);
       
     });        
@@ -500,41 +500,17 @@ NG16 3SU<br />
       $("#core").hide();
       $("#logo").hide();
       
-      var slider = $(".royalSlider").data('royalSlider');
+      var slider = $('#otherServicesGallery').data('royalSlider');
       slider.goTo(0);
       
     });     
   </script>
   
-  <script>
-  	$("#gallerylink").click(function () {
-      $("#ourstory").hide(); 	
-      $("#productGallery").show();
-      $("#core").hide();
-      $("#logo").hide();
-      
-      var slider = $(".royalSlider").data('royalSlider');
-      slider.goTo(0);
-      
-    });
 
-  	$("#gallerylink2").click(function () {
- 	  $("#ourstory").show(); 	
-      $("#productGallery").hide();
-      $("#core").hide();
-      $("#logo").hide();
-      
-      var slider = $(".royalSlider").data('royalSlider');
-      slider.goTo(0);
-      
-    });
-  	
-  	
-  </script>
 
  	<script>
     jQuery(document).ready(function($) {
-        $(".royalSlider").royalSlider({
+        $('#productGallery, #otherServicesGallery, #core, #ourstory, #servicesGallery').royalSlider({
             // options go here
             // as an example, enable keyboard arrows nav
             keyboardNavEnabled: true,
@@ -546,7 +522,7 @@ NG16 3SU<br />
             autoPlay: 
             {	// autoplay options go gere
     		enabled: true,
-    		pauseOnHover: true,
+    		pauseOnHover: false,
     		delay: 5000
     		}
         });  
